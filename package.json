@@ -35,5 +35,6 @@
   "version": "1.0.0",
   "main": "index.js",
   "author": "Mishchenko Artem",
-  "license": "MIT"
+  "license": "MIT",
+  "repository": "git@github.com:MishchenkoArtem/ahj-3-event-handling.git"
 }
