@@ -29,7 +29,8 @@
     "eslint-config-airbnb-base": "^15.0.0",
     "eslint-plugin-import": "^2.29.1",
     "html-webpack-plugin": "^5.6.0",
-    "live-server": "^1.2.2"
+    "live-server": "^1.2.2",
+    "yarn": "^1.22.21"
   },
   "name": "ahj-3-event-handling",
   "version": "1.0.0",
