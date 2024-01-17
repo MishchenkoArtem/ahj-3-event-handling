@@ -5,6 +5,7 @@ const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 
 module.exports = {
     entry: './src/index.js',
+    devtool: 'inline-source-map',
     output: {
         path: path.resolve(__dirname, 'dist'),
         filename: 'index.js',
@@ -12,6 +13,7 @@ module.exports = {
     },
     mode: 'development',
     devServer: {
+        static: './dist',
         historyApiFallback: true,
         compress: true,
         open: true,
@@ -31,6 +33,7 @@ module.exports = {
     },
     plugins: [
         new HtmlWebpackPlugin({
+            title: 'Development',
             filename: 'index.html',
             template: './src/index.html',
         }),
