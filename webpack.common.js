@@ -4,12 +4,15 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 
 module.exports = {
-    entry: './src/index.js',
+    entry: {
+        app: './src/index.js',
+    },
     devtool: 'inline-source-map',
     output: {
         path: path.resolve(__dirname, 'dist'),
-        filename: 'index.js',
+        filename: 'index.bundle.js',
         publicPath: "/webpack-demo/",
+        clean: true,
     },
     mode: 'development',
     devServer: {
@@ -33,7 +36,7 @@ module.exports = {
     },
     plugins: [
         new HtmlWebpackPlugin({
-            title: 'Development',
+            title: 'Production',
             filename: 'index.html',
             template: './src/index.html',
         }),
