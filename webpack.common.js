@@ -9,7 +9,7 @@ module.exports = {
     },
     devtool: 'inline-source-map',
     output: {
-        path: path.resolve(__dirname, 'dist'),
+        path: path.resolve(__dirname, 'dist/assets'),
         filename: 'index.bundle.js',
         publicPath: "/webpack-demo/",
         clean: true,
