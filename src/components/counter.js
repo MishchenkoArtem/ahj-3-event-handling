@@ -1,8 +1,5 @@
-import { arrayCounter } from './constans';
-import { arrayBox } from './constans';
-import { popup } from './constans';
-import { popupHeading } from './constans';
-import { popupButton } from './constans';
+import { arrayCounter, arrayBox, popup, popupHeading, popupButton } from './constans';
+import { successfulСlick } from './cursor';
 
 // --- Изменения счетчиков и открытие попапа.
 export function eventListener() {
@@ -12,6 +9,7 @@ export function eventListener() {
 
             if (element.classList.contains('playing-field__image')) {
                 arrayCounter[0].textContent++;
+                successfulСlick();
 
                 if (arrayCounter[0].textContent === '5') {
                     popup.classList.add('popup_opened');
