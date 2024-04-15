@@ -4,10 +4,9 @@ import { successfulСlick } from './cursor';
 // --- Изменения счетчиков и открытие попапа.
 export function eventListener() {
     arrayBox.forEach(item => {
-        item.addEventListener('click', (event) => {
-            const element = event.target;
+        item.addEventListener('click', () => {
 
-            if (element.classList.contains('playing-field__image')) {
+            if (item.classList.contains('playing-field__image')) {
                 arrayCounter[0].textContent++;
                 successfulСlick();
 

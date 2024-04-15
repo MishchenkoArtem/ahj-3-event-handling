@@ -6,6 +6,7 @@ html {
 @import url(./blocks/playing-field/playing-field.css);
 @import url(./blocks/playing-field/__box/playing-field__box.css);
 @import url(./blocks/playing-field/__image/playing-field__image.css);
+@import url(./blocks/playing-field/__image/_change_cursor/playing-field__image_change_cursor.css);
 @import url(./blocks/counter/counter.css);
 @import url(./blocks/counter/__text/counter__text.css);
 @import url(./blocks/counter/__span/counter__span.css);

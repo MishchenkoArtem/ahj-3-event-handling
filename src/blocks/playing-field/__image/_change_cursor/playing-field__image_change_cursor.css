@@ -1,0 +1,3 @@
+.playing-field__image_change_cursor:hover {
+    cursor: url('../../../../images/cat.png'), pointer;
+}
