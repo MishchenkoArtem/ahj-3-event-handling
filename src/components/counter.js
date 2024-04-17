@@ -1,5 +1,4 @@
 import { arrayCounter, arrayBox, popup, popupHeading, popupButton } from './constans';
-import { successfulСlick } from './cursor';
 
 // --- Изменения счетчиков и открытие попапа.
 export function eventListener() {
