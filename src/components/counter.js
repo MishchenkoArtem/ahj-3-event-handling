@@ -8,7 +8,6 @@ export function eventListener() {
 
             if (item.classList.contains('playing-field__image')) {
                 arrayCounter[0].textContent++;
-                successfulСlick();
 
                 if (arrayCounter[0].textContent === '5') {
                     popup.classList.add('popup_opened');
