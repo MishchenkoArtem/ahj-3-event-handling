@@ -6,14 +6,14 @@ export function eventListener() {
         item.addEventListener('click', () => {
 
             if (item.classList.contains('playing-field__image')) {
-                arrayCounter[0].textContent++;
+                arrayCounter[0].textContent += 1;
 
                 if (arrayCounter[0].textContent === '5') {
                     popup.classList.add('popup_opened');
                     popupHeading.textContent = 'Победа';
                 }
             } else {
-                arrayCounter[1].textContent++;
+                arrayCounter[1].textContent += 1;
 
                 if (arrayCounter[1].textContent === '5') {
                     popup.classList.add('popup_opened');
