@@ -2,7 +2,7 @@ import { arrayCounter, arrayBox, popup, popupHeading, popupButton } from './cons
 
 const testCounter = (element) => {
     const nums = element.textContent += 1;
-
+    
     const sum = nums.split('').
         reduce(function (currentSum, currentNumber) {
             return Number(currentSum) + Number(currentNumber)
