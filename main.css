@@ -1,0 +1,145 @@
+.body {
+    display: flex;
+    justify-content: center;
+    
+    margin: 0;
+
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.playing-field {
+    display: flex;
+    flex-wrap: wrap;
+
+    max-width: 800px;
+}
+.playing-field__box {
+    min-width: 220px;
+    min-height: 220px;
+
+    margin: 15px;
+
+    box-sizing: border-box;
+
+    background-color: rgb(75, 179, 80);
+    border-radius: 50%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.playing-field__image {
+    background-image: url(2dbd01ce16c0fa83cb67.png);
+    background-repeat: no-repeat;
+    background-position: center;
+
+    max-height: 120px;
+    max-width: 120px;
+}
+.playing-field__image_change_cursor:hover {
+    cursor: url(89c5ee650b218afde53a.png), pointer;
+}
+.counter {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    overflow: hidden;
+
+    border-radius: 10px;
+
+    background-color: #f0f0f0;
+
+    min-width: 170px;
+    max-width: 300px;
+    max-height: 100px;
+
+    margin: 100px 100px 0 20px;
+}
+.counter__text {
+    display: flex;
+
+    font-size: 2rem;
+
+    padding: 0 100px 10px 100px;
+    margin: 0;
+}
+
+.counter__text:last-child {
+    padding-bottom: 0;
+}
+.counter__span {
+    display: block;
+
+    margin-left: 10px;
+}
+.popup {
+    box-sizing: border-box;
+
+    background-color: rgba(0, 0, 0, 0.8);
+
+    position: fixed;
+
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.6s, visibility 0s 0.6s;
+}
+.popup__container {
+    background-color: #e4e4e4;
+
+    position: absolute;
+
+    max-width: 430px;
+    width: 100%;
+    min-height: 330px;
+
+    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+    box-sizing: border-box;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.popup_opened {
+    visibility: visible;
+    opacity: 1;
+    transition: visibility 0s, opacity 0.6s;
+}
+.popup__heading {
+    position: relative;
+
+    font-size: 4rem;
+
+    text-align: center;
+
+    padding: 0;
+    margin: 0;
+}
+.popup__button {
+    font-family: inherit;
+
+    max-width: 350px;
+
+    padding: 10px 100px;
+    margin: 20px 0 0;
+
+    border: solid 1px rgb(153, 153, 153);
+    font-size: 2rem;
+}
+html {
+    font-size: 10px;
+}
+
+
+/*# sourceMappingURL=main.css.map*/
